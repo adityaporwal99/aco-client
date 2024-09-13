@@ -12,7 +12,7 @@ function NewsFill() {
     async function fetchData() {
         setLoading(true)
         try {
-            const res = await axios.get(`http://localhost:5000/news`)
+            const res = await axios.get(`https://aco-server.onrender.com/news`)
             setArticles(res.data.articles)
         }
         catch (error) {
